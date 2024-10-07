@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Lato, sans-serif;
+    padding: .6rem 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+
+.profiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1rem;
+    padding: .2rem 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: .2rem 1rem;
+}
+
+main .heading h2 {
+    font-size: 1.6rem;
+}
+
+main h3 {
+    font-size: 1.3rem;
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+.edu_info,
+.exp_info,
+.projects,
+.tech_skills,
+.leadership_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.edu_heading,
+.exp_heading,
+.edu_para,
+.exp_para,
+.leadership_heading,
+.leadership_para {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: .4rem 0;
+    list-style: none;
+}
+
+.proj_heading,
+.proj_para {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.projects h3:last-child {
+    /* background-color: aqua; */
+    flex: 1;
+    text-align: end;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.languages,
+.dev_tools,
+.technologies_frameworks {
+    display: flex;
+    gap: .8rem;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: .4rem .1rem;
+    }
+
+    header {
+        padding: .2rem .4rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .profiles {
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: .8rem;
+        padding: .2rem .8rem;
+    }
+
+    main {
+        gap: .7rem;
+        padding: .2rem .4rem;
+    }
+
+    main .heading h2 {
+        font-size: 1.2rem;
+    }
+
+    main h3 {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: .8rem;
+    }
+
+    .edu_info,
+    .exp_info,
+    .projects,
+    .tech_skills,
+    .leadership_info {
+        gap: 0rem;
+    }
+
+    .edu_para,
+    .exp_para,
+    .leadership_para {
+        padding: .3rem 0;
+    }
+
+    ul {
+        font-size: .7rem;
+        margin: .1rem 0;
+    }
+
+    .proj_heading,
+    .proj_para {
+        gap: .4rem;
+    }
+
+    .languages,
+    .dev_tools,
+    .technologies_frameworks {
+        flex-direction: column;
+        gap: .1rem;
+    }
+}
