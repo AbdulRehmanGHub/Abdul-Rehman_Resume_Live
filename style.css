@@ -8,6 +8,15 @@ body {
     font-size: 62.5%;
     font-family: Lato, sans-serif;
     padding: .6rem 1rem;
+    cursor: default;
+    position: relative;
+}
+
+#bg-mode {
+    font-size: 2rem;
+    position: absolute;
+    top: 2%;
+    right: 3%;
 }
 
 header {
@@ -88,7 +97,8 @@ ul {
     font-size: 1.1rem;
     text-align: justify;
     margin: .4rem 0;
-    list-style: none;
+    /* list-style: none; */
+    padding-left: 1.4rem;
 }
 
 .proj_heading,
@@ -104,7 +114,7 @@ ul {
     text-align: end;
 }
 
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
     gap: .4rem;
@@ -118,9 +128,92 @@ ul {
 }
 
 
+@media (min-width: 1500px) {
+    body {
+        padding: 1rem 2rem;
+    }
+
+    #bg-mode {
+        font-size: 4rem;
+        top: 2%;
+        right: 3%;
+    }
+
+    header {
+        padding: .6rem 2rem;
+    }
+
+    header h1 {
+        font-size: 4.2rem;
+    }
+
+    header p {
+        font-size: 2.2rem;
+    }
+
+    .profiles {
+        gap: 2rem;
+        font-size: 2.2rem;
+        padding: .4rem 1rem;
+    }
+
+    main {
+        gap: 1rem;
+        padding: .4rem 1rem;
+    }
+
+    main .heading h2 {
+        font-size: 2.6rem;
+    }
+
+    main h3 {
+        font-size: 2.2rem;
+    }
+
+    main p {
+        font-size: 2rem;
+    }
+
+    .edu_info,
+    .exp_info,
+    .projects,
+    .tech_skills,
+    .leadership_info {
+        gap: .2rem;
+    }
+
+    .edu_para,
+    .exp_para,
+    .leadership_para {
+        padding: .3rem 0;
+    }
+
+    ul {
+        font-size: 1.8rem;
+        margin: .4rem 0;
+    }
+
+    .proj_heading,
+    .proj_para {
+        gap: .6rem;
+    }
+
+    .languages,
+    .dev_tools,
+    .technologies_frameworks {
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding: .4rem .1rem;
+    }
+
+    #bg-mode {
+        font-size: 1.6rem;
+        top: 2%;
+        right: 2%;
     }
 
     header {
