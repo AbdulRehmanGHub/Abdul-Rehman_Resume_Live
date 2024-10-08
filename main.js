@@ -1,6 +1,7 @@
 let bgMode = document.querySelector("#bg-mode");
 let body = document.querySelector("body");
 let profiles = document.querySelectorAll("i");
+let links = document.querySelectorAll("a");
 
 let flag = 1;
 bgMode.addEventListener("click", () => {
@@ -10,11 +11,17 @@ bgMode.addEventListener("click", () => {
     profiles.forEach((e) => {
       e.style.color = "#fff";
     });
+    links.forEach((e) => {
+      e.style.color = "#fff";
+    });
     flag = 0;
   } else {
     body.style.backgroundColor = "#fff";
     body.style.color = "#000";
     profiles.forEach((e) => {
+      e.style.color = "#000";
+    });
+    links.forEach((e) => {
       e.style.color = "#000";
     });
     flag = 1;
