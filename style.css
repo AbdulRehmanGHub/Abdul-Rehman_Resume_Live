@@ -10,6 +10,7 @@ body {
     padding: .6rem 1rem;
     cursor: default;
     position: relative;
+    transition: ease-in-out .8s;
 }
 
 ::-webkit-scrollbar {
