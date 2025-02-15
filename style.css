@@ -62,13 +62,21 @@ a {
     color: black;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
     padding: .2rem 1rem;
+}
+
+main .heading{
+    padding-bottom: 10px;
+}
+
+main .heading hr{
+    color: gray;
+    max-height: 1px;
 }
 
 main .heading h2 {
